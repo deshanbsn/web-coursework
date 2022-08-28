@@ -1,37 +1,3 @@
-<?php 
-if(isset($_POST['title']) && isset($_POST['price']) && isset($_POST['description'])) {
-
-    include "config/connectDB.php";
-
-    function validate($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      return $data;
-    }
-
-    $name = validate($_POST['title']);
-    $email = validate($_POST['price']);
-    $message = validate($_POST['description']);
-
-
-    if(empty($title) || empty($price) || empty($description)) {
-      header("Location: index.php");
-        } else {
-            $sql = "insert into contact-form(title, price, description) values('$title','$price','$description')";
-            $res = mysqli_query($conn, $sql);
-
-            if($res) {
-              echo "";
-            } else {
-               echo "Your message could not be sent!";
-            }
-          }
-} else {
-  header("Location: index.php");
-}
-
-?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +42,7 @@ if(isset($_POST['title']) && isset($_POST['price']) && isset($_POST['description
             <div class="row">
                 
                 <div class="content1">
-                <form action="cart.php" method="post">
+                <form action="./config/addItem.php" method="post">
                     <img src="assets/p30-pro-blue.png" alt="Category 1">
                     <h2 class="title">HUAWEI P50 Pro</h2>
                     <br/>
@@ -96,7 +62,7 @@ if(isset($_POST['title']) && isset($_POST['price']) && isset($_POST['description
                 </div>               
                 
                 <div class="content1">
-                <form action="cart.php" method="post">
+                <form action="config/addItem.php" method="post">
                     <img src="assets/p40-pro-silver.png" alt="Category 2">
                     <h2 class="title">HUAWEI P40 Pro</h2>  
                     <br/>
