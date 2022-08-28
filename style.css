@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+}
+/*-------------- Navigation Bar ---------------*/
+.navbar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    border-left: 2px solid white;
+    width: 14.14%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#9e9c96;
+    width: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #23ce3f;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.myNavBar{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container1{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.topContent{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.topContent img{
+    max-width: 100%;
+    padding: 0px 0;
+    margin-left: 20%;
+}
+.topContent h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0px 0;
+}
+.button1{
+    display: inline-block;
+    background: #215bc7;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+}
+.firstPart{
+    background: linear-gradient(#fff,#669ff5);
+    padding: 20px;
+    margin-top: -30px;
+}
+.main-logo{
+    width: 100px;
+}
+.firstPart .row{
+    margin-top: 70px;
+}
+.button1:hover{
+    background: #563434 ;
+}
+.categories{
+    margin: 20px 0;
+    
+}
+.content1{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content1 img{
+    width: 450px;
+    height: 550px;
+   
+}
+.container2{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.content2{
+    flex-basis: 20%; 
+    margin-bottom: 50px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
